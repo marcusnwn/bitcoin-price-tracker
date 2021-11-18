@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 80
+const port = 3000
 const rp = require('request-promise');
 const moment = require('moment');
 
@@ -21,7 +21,8 @@ const requestOptions = {
 };
 
 app.set('view engine', 'ejs');
-app.use(express.static("public"))
+const publicDir = require('path').join(__dirname, '/public');
+app.use(express.static(publicDir))
 
 app.get('/', (req, res) => {
 

@@ -10,4 +10,4 @@ npm install
 node app.js
 ```
 
-
+To deploy on AWS EC2, refer to the AWS-EC2-Deploy.md file
