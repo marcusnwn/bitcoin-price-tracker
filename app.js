@@ -28,16 +28,12 @@ app.get('/', (req, res) => {
 
 
     const formatPercentage = (num) => {
-            if (num > 0) {
-                return "+" + num.toFixed(2);
-            } else {
-                return num.toFixed(2).toString();
-            }
+        if (num > 0) {
+            return "+" + num.toFixed(2);
+        } else {
+            return num.toFixed(2).toString();
         }
-        // const price = org_price
-        // const price_change_1d = formatPercentage(1.0157)
-        // const price_change_30d = formatPercentage(-3.7472)
-        // const price_change_90d = formatPercentage(26.956)
+    }
 
     rp(requestOptions).then(response => {
         const org_last_update = response["data"]["1"]["last_updated"]

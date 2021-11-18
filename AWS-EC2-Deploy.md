@@ -18,9 +18,19 @@ Clone app on server
 git clone https://github.com/marcusnwn/bitcoin-price.git
 ```
 
-Install the dependencies and start the server
+Install the dependencies
 ```
 cd bitcoin-price
 npm install
+```
+
+Keep the app running even closing the terminal or server restarts using PM2
+```
+npm install pm2 -g
+sudo pm2 start app.js
+sudo pm2 startup
+```
+```
 node app.js
 ```
+
