@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Bitcoin Tracker</title>
+</head>
+
+<body>
+    <h1>Bitcoin Tracker</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="icon"><img class="img " src="/images/Bitcoin.png "></div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="priceInfo">
+                    <p class="price ">Price:
+                        <%= price %>
+                    </p>
+
+                    <table class="priceChange ">
+                        <tr>
+                            <td>24 Hours Price Change :</td>
+                            <td class="right">
+                                <%= price_change_1d %> %</td>
+                        </tr>
+                        <tr>
+                            <td>30 Days Price Change :</td>
+                            <td class="right">
+                                <%= price_change_30d %> %</td>
+                        </tr>
+                        <tr>
+                            <td>90 Days Price Change :</td>
+                            <td class="right">
+                                <%= price_change_90d %> %</td>
+                        </tr>
+                    </table>
+
+                    <div class="right">
+                        <p>Last Update:
+                            <%= last_update %>
+                        </p>
+                        <p>Marcus Ngai</p>
+                        <p>API: coinmarketcap.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #021435;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.priceInfo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price {
+    color: #fff;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.priceChange {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+    text-align: right;
+}
