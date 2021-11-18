@@ -8,7 +8,7 @@ const APIKeyFile = require('./keys')
 
 const requestOptions = {
     method: 'GET',
-    // uri: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest',
+    uri: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest',
     qs: {
         'id': '1',
         'convert': 'USD'
