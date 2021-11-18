@@ -24,13 +24,12 @@ cd bitcoin-price
 npm install
 ```
 
-Keep the app running even closing the terminal or server restarts using PM2
+Start the app and keep the app running even closing the terminal or server restarts using PM2
 ```
-npm install pm2 -g
+sudo npm install pm2 -g
 sudo pm2 start app.js
 sudo pm2 startup
+sudo pm2 save
 ```
-```
-node app.js
-```
+
 
