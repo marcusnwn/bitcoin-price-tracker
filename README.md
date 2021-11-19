@@ -47,6 +47,8 @@ sudo pm2 save
 
 # An architecture that is scalable and highly available
 
+![BitcoinTrackerApp](https://user-images.githubusercontent.com/9261163/142562484-809b54d8-5910-4a1c-bfab-4c248894642b.png)
+
 Create an AMI from the EC2 instance
 
 Create an Auto Scaling Group in multi AZs using the AMI as launch template
@@ -63,5 +65,5 @@ Final Outcome:
 
 [https://bitcointracker.cloudee.org/](https://bitcointracker.cloudee.org/)
 
-![BitcoinTrackerApp](https://user-images.githubusercontent.com/9261163/142562484-809b54d8-5910-4a1c-bfab-4c248894642b.png)
+
 
