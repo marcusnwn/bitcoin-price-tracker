@@ -61,5 +61,6 @@ Add a SSL in ACM for your domain, update ALB HTTPS listener using the SSL.
 Final Outcome:
 
 [https://bitcointracker.cloudee.org/](https://bitcointracker.cloudee.org/)
+
 ![BitcoinTrackerApp](https://user-images.githubusercontent.com/9261163/142562484-809b54d8-5910-4a1c-bfab-4c248894642b.png)
 
