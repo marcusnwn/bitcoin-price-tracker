@@ -32,4 +32,13 @@ sudo pm2 startup
 sudo pm2 save
 ```
 
+# An architecture that is scalable
+
+Create an AMI from the EC2 instance
+
+Create an Auto Scaling Group using the AMI as launch template
+
+Create an Application Load Balancer for the Auto Scaling Group
+
+Create an Route53 record to point to the Application Load Balancer
 
