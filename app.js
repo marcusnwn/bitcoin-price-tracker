@@ -39,7 +39,7 @@ app.get('/', (req, res) => {
         const org_last_update = response["data"]["1"]["last_updated"]
         const process_last_update = Date.parse(org_last_update)
 
-        const last_update = moment(new Date(process_last_update)).local().format("YYYY-MM-DD HH:mm:ss")
+        const last_update = moment(new Date(process_last_update)).utcOffset('+0800').format("YYYY-MM-DD HH:mm:ss")
         const price = response["data"]["1"]["quote"]["USD"]["price"].toLocaleString('en-US', { maximumFractionDigits: 2 })
         const price_change_1d = formatPercentage(response["data"]["1"]["quote"]["USD"]["percent_change_24h"])
         const price_change_30d = formatPercentage(response["data"]["1"]["quote"]["USD"]["percent_change_30d"])
