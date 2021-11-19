@@ -32,13 +32,20 @@ sudo pm2 startup
 sudo pm2 save
 ```
 
-# An architecture that is scalable
+# An architecture that is scalable and highly available
 
 Create an AMI from the EC2 instance
 
-Create an Auto Scaling Group using the AMI as launch template
+Create an Auto Scaling Group in multi AZs using the AMI as launch template
 
 Create an Application Load Balancer for the Auto Scaling Group
 
-Create an Route53 record to point to the Application Load Balancer
+Specify the scaling policy and health check
 
+Create an Route53 alias record to point to the Application Load Balancer, update the nameservers on the 3rd party domain registrar.
+
+Add a SSL in ACM for your domain, update ALB HTTPS listener using the SSL.
+
+Final Outcome:
+
+[https://bitcointracker.cloudee.org/](https://bitcointracker.cloudee.org/)
