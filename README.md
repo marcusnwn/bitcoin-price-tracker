@@ -17,6 +17,7 @@ Create an AWS EC2 instance
 SSH to the EC2 instance
 
 Install Nodejs and git on the instance
+
 Reference: https://github.com/nodesource/distributions/blob/master/README.md#rpminstall
 
 ```
